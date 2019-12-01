@@ -178,8 +178,12 @@ class Game
   #     end
   # end
 
+  # def draw?
+  #   board.full? && !won?
+  # end
+
   def draw?
-    board.full? && !won?
+    draw_move? && !won?
   end
 
   # def over?
