@@ -182,7 +182,7 @@ class Game
     board.full? && !won?
   end
 
-  
+
 
   # def over?
   #   if draw?
