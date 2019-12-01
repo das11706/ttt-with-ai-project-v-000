@@ -61,7 +61,7 @@ class Game
   end
 
   def draw_move?
-    DRAW_COMBINATIONS.find do |drawer|
+    WIN_COMBINATIONS.find do |drawer|
       if @board.cells[drawer[0]] == @board.cells[drawer[1]]
         computer_move = @board.cells[drawer[2]] ||
        @board.cells[drawer[3]] == @board.cells[drawer[4]]
